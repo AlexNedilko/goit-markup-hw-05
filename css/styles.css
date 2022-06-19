@@ -96,6 +96,9 @@ img {
 .header-list {
   display: flex;
 }
+.header-item {
+  position: relative;
+}
 .header-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -116,6 +119,17 @@ img {
 }
 .current {
   color: var(--link-selection-solor);
+}
+.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
 }
 .header-contact-list {
   display: flex;
@@ -245,6 +259,26 @@ img {
 }
 .work-item:not(:last-child) {
   margin-right: 30px;
+}
+.work-card {
+  position: relative;
+}
+.about-back {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
+.about-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
 /* ------------- TEAM ----------------- */
 .team {
@@ -423,6 +457,38 @@ img {
 .company-social-icon {
   fill: currentColor;
 }
+/* ------------- MODAL ----------------- */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.modal .close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
 /* ------------- page 2 - FILTERS ----------------- */
 .filters-list {
   display: flex;
@@ -471,6 +537,9 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.projects-card-link:hover .card-overlay {
+  opacity: 1;
+}
 .projects-item:nth-child(3n) {
   margin-right: 0;
 }
@@ -489,6 +558,26 @@ img {
 }
 .projects-pic {
   display: block;
+}
+.projects-thumb {
+  position: relative;
+}
+.card-overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+  /* pointer-events: none; */
+}
+.overlay-text {
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
 }
 .projects-item-name {
   margin-bottom: 4px;
