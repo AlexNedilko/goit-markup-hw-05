@@ -25,15 +25,15 @@
       <nav class="header-nav">
         <ul class="header-list list">
           <li class="header-item">
-            <a class="header-link link header-link-select current" href="./index.html">Студия
+            <a class="header-link link current" href="./index.html">Студия
             </a>
           </li>
           <li class="header-item">
-            <a class="header-link link header-link-select" href="./portfolio.html">Портфолио
+            <a class="header-link link" href="./portfolio.html">Портфолио
             </a>
           </li>
           <li class="header-item">
-            <a class="header-link link header-link-select" href="">Контакты</a>
+            <a class="header-link link" href="">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -61,7 +61,7 @@
     <section class="section-hero overlay">
       <div class="container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero-btn" type="button">Заказать услугу</button>
+        <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
       </div>
     </section>
     <!-- особенности -->
@@ -208,19 +208,19 @@
                         <use href="./images/icons.svg#instagram"></use>
                       </svg></a>
                   </li>
-                  <li class="item centering">
+                  <li class="item">
                     <a href="" class="member-social-link link centering">
                       <svg class="member-social-icon" width="20" height="20">
                         <use href="./images/icons.svg#twitter"></use>
                       </svg></a>
                   </li>
-                  <li class="item centering">
+                  <li class="item">
                     <a href="" class="member-social-link link centering">
                       <svg class="member-social-icon" width="20" height="20">
                         <use href="./images/icons.svg#facebook"></use>
                       </svg></a>
                   </li>
-                  <li class="item centering">
+                  <li class="item">
                     <a href="" class="member-social-link link centering">
                       <svg class="member-social-icon" width="20" height="20">
                         <use href="./images/icons.svg#linkedin"></use>
@@ -243,19 +243,19 @@
                         <use href="./images/icons.svg#instagram"></use>
                       </svg></a>
                   </li>
-                  <li class="item centering">
+                  <li class="item">
                     <a href="" class="member-social-link link centering">
                       <svg class="member-social-icon" width="20" height="20">
                         <use href="./images/icons.svg#twitter"></use>
                       </svg></a>
                   </li>
-                  <li class="item centering">
+                  <li class="item">
                     <a href="" class="member-social-link link centering">
                       <svg class="member-social-icon" width="20" height="20">
                         <use href="./images/icons.svg#facebook"></use>
                       </svg></a>
                   </li>
-                  <li class="item centering">
+                  <li class="item">
                     <a href="" class="member-social-link link centering">
                       <svg class="member-social-icon" width="20" height="20">
                         <use href="./images/icons.svg#linkedin"></use>
@@ -278,19 +278,19 @@
                         <use href="./images/icons.svg#instagram"></use>
                       </svg></a>
                   </li>
-                  <li class="item centering">
+                  <li class="item">
                     <a href="" class="member-social-link link centering">
                       <svg class="member-social-icon" width="20" height="20">
                         <use href="./images/icons.svg#twitter"></use>
                       </svg></a>
                   </li>
-                  <li class="item centering">
+                  <li class="item">
                     <a href="" class="member-social-link link centering">
                       <svg class="member-social-icon" width="20" height="20">
                         <use href="./images/icons.svg#facebook"></use>
                       </svg></a>
                   </li>
-                  <li class="item centering">
+                  <li class="item">
                     <a href="" class="member-social-link link centering">
                       <svg class="member-social-icon" width="20" height="20">
                         <use href="./images/icons.svg#linkedin"></use>
@@ -409,15 +409,16 @@
 
     </div>
   </footer>
-  <div class="backdrop">
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button class="close centering">
+      <button class="close centering" data-modal-close>
         <svg class="close-icon" width="11" height="11">
           <use href="./images/icons.svg#modal-close"></use>
         </svg>
       </button>
     </div>
   </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
